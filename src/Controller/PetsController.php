@@ -11,7 +11,6 @@ class PetsController extends AbstractController
     /**
      * @Route("/pets",name= "pets")
      */
-    //#[Route('/pets', name: 'pets')]
     public function index(): Response
     {
         return $this->render('pets/index.html.twig', [
