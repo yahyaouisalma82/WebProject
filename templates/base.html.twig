@@ -34,6 +34,7 @@
 </head>
 
 <body>
+
 {{ include('header.html.twig') }}
 {% for  message in  app.session.flashBag.get('info') %}
        <div class="alert alert-info">
@@ -50,6 +51,7 @@
               {{ message }}
        </div>
 {% endfor %}
+<div class="container">
 {% block body %}  {% endblock %}
-
+</div>
 </body>
