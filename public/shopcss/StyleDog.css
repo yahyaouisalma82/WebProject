@@ -28,20 +28,20 @@ button{
     margin-top: 30px;
 }
 .card1{
-    background-image:url("shopimages/food.jpg");
+    background-image:url("public/shopimages/food.jpg");
 
 
 }
 .card2{
-    background-image:url("shopimages/transport.jpg");
+    background-image:url("public/shopimages/transport.jpg");
 }
 .card3{
-    background-image:url("shopimages/accessories.jpg");
+    background-image:url("public/shopimages/accessories.jpg");
 }
 
 .card4{
 
-    background-image:url("shopimages/douche.jpg");
+    background-image:url("public/shopimages/douche.jpg");
 }
 .card:hover{
     transform: translateY(-10px);
@@ -54,7 +54,7 @@ h5{
     text-shadow:0 0 15px #000;
 }
 body{
-background-image: url("shopimages/background.jpg");
+background-image: url("public/shopimages/background.jpg");
 }
 .card{
     width: 200px;

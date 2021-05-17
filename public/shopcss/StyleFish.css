@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("shopimages/background.jpg");
+    background-image: url("public/shopimages/background.jpg");
 }
 .row{
     display: flex;
@@ -30,13 +30,13 @@ button{
     margin-top: 30px;
 }
 .card1{
-    background-image:url("shopimages/aqua.png");
+    background-image:url("public/shopimages/aqua.png");
 
 
 }
 
 .card3{
-    background-image:url("shopimages/fish.png");
+    background-image:url("public/shopimages/fish.png");
 }
 
 .card:hover{

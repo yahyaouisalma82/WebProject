@@ -27,19 +27,19 @@ button {
 }
 
 .card1 {
-    background-image: url("shopimages/catFood.jpg");
+    background-image: url("public/shopimages/catFood.jpg");
 }
 
 .card2 {
-    background-image: url("shopimages/catSleeping.jpg");
+    background-image: url("public/shopimages/catSleeping.jpg");
 }
 
 .card3 {
-    background-image: url("shopimages/catToys.jpg");
+    background-image: url("public/shopimages/catToys.jpg");
 }
 
 .card4 {
-    background-image: url("shopimages/cat.jpg");
+    background-image: url("public/shopimages/cat.jpg");
 }
 
 .card:hover {
