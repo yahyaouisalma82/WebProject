@@ -1,9 +1,15 @@
 {% extends 'base.html.twig' %}
+{% block stylesheets %}
+{{ parent() }}
+    <link rel="Stylesheet" href="shopcss/ImagesRoll.css">
+    <link rel="Stylesheet" href="shopcss/StyleShop.css">
+
+{% endblock %}
 
 {% block title %}Hello ShopController!{% endblock %}
 
 {% block body %}
-
+<div class="container">
     <div class="slider">
         <div class="slides">
             <input type="radio" name="radio-btn" id="radio1">
@@ -46,4 +52,239 @@
             }
         },5000);
     </script>
+    <br><br><br>
+    <div class="container">
+        <h1 class="title">Customer Favorite</h1>
+    <table class="table" >
+        <tr  >
+            <td> <img class="monimage" src="shopimages/collierCat2.jpg" width="250px" height="250px">
+                <h4>Migliore Cane</h4>
+                <div class="rating">
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                </div>
+                <p>$50.00</p>
+
+            </td>
+
+            <td> <img class="monimage" src="shopimages/foodCat1.jpg" width="250px" height="250px">
+                <h4>Migliore Cane</h4>
+                <div class="rating">
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                </div>
+
+                <p>$50.00</p>
+
+            </td>
+            <td> <img class="monimage" src="shopimages/foodDog4.jpg" width="250px" height="250px">
+                <h4>Miglore Cane</h4>
+                <div class="rating">
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+
+                </div>
+
+                <p>$50.00</p>
+
+            </td>
+            <td><img class="monimage" src="shopimages/foodDog5.jpg" width="250px" height="250px">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                </div>
+
+                <p>$50.00</p>
+
+            </td>
+
+        </tr>
+
+    </table>
+    </div>
+    <br><br>
+    <h1 class="title">Extra 5% Off with Autoship & Save</h1>
+    <table class="table">
+        <tr >
+            <td><img class="monimage" src="shopimages/matelasCat3.jpg" width="250px" height="250px">
+                <div class="rating">
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                </div>
+
+                <p>$50.00</p>
+            </td>
+            <td> <img class="monimage" src="shopimages/panierCat2.jpg" width="250px" height="250px">
+                <h4>Migliore Cane</h4>
+                <div class="rating">
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                </div>
+
+                <p>$50.00</p>
+            </td>
+            <td><img class="monimage" src="shopimages/panierCat4.jpg" width="250px" height="250px">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                </div>
+
+                <p>$50.00</p>
+            </td>
+            <td> <img class="monimage" src="shopimages/sensitive6.jpg" width="250px" height="250px">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                    <i class="bi bi-star-fill" style="color: black"></i>
+                </div>
+
+                <p>$50.00</p>
+            </td>
+
+        </tr>
+
+    </table>
+</div>
+    <br><br>
+<div class="small-container">
+
+    <h1 class="title">Discover Our new Products</h1>
+    <table class="table">
+        <tr >
+            <td><img class="monimage" src="shopimages/sensitive8.jpg" width="250px" height="250px">
+                <h4>Red Printed T-Shirt</h4>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+</div>
+
+<p>$50.00</p>
+</td>
+<td> <img class="monimage" src="shopimages/sensitive11.jpg" width="250px" height="250px">
+    <h4>Migliore Cane</h4>
+    <div class="rating">
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+    </div>
+
+    <p>$50.00</p>
+</td>
+<td> <img class="monimage" src="shopimages/sensitive14.jpg" width="250px" height="250px">
+    <h4>Red Printed T-Shirt</h4>
+    <div class="rating">
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+    </div>
+
+    <p>$50.00</p>
+</td>
+
+<td><img class="monimage" src="shopimages/sensitive27.jpg" width="250px" height="250px">
+    <h4>Red Printed T-Shirt</h4>
+    <div class="rating">
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+        <i class="bi bi-star-fill" style="color: black"></i>
+    </div>
+
+    <p>$50.00</p>
+</td>
+
+</tr>
+
+</table>
+<h2 class="title">Latest Products</h2>
+<table class="table">
+    <tr >
+        <td> <img class="monimage" src="shopimages/collierCat3.jpg"width="250px" height="250px">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+
+            </div>
+
+            <p>$50.00</p>
+        </td>
+        <td> <img class="monimage" src="shopimages/foodCat1.jpg" width="250px" height="250px">
+
+            <h4>Red Printed T-Shirt</h4>
+            <i class="bi bi-star-fill" style="color: black"></i>
+            <i class="bi bi-star-fill" style="color: black"></i>
+            <i class="bi bi-star-fill" style="color: black"></i>
+            <i class="bi bi-star-fill" style="color: black"></i>
+            <i class="bi bi-star-fill" style="color: black"></i>
+            </div>
+            <p>$50.00</p>
+        </td>
+        <td><img class="monimage" src="shopimages/foodCat14.jpg" width="250px" height="250px">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+            </div>
+
+            <p>$50.00</p>
+        </td>
+        <td> <img class="monimage" src="shopimages/tCat2.jpg" width="250px" height="250px">
+            <h4>Migliore Cane</h4>
+            <div class="rating">
+
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+                <i class="bi bi-star-fill" style="color: black"></i>
+            </div>
+
+            <p>$50.00</p>
+        </td>
+
+    </tr>
+
+</table>
+
+    </div>
 {% endblock %}
