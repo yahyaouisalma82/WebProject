@@ -14,7 +14,7 @@
               <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
               <link rel="Stylesheet" href="index.css">
               <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-              <link rel="Stylesheet" href="shopcss/ImagesRoll.css">
+
               <link rel="Stylesheet"  href="footer.css">
               <link rel="shortcut icon" type="img/png" href="image/logo.png">
               <link rel="shortcut icon" type="img/png" href="image/logo.png">
@@ -30,12 +30,12 @@
        {% endblock %}
        <!--<link rel="Stylesheet" href="node_modules/bootswatch/dist/minty/bootstrap.css">-->
 
-       {{ include('header.html.twig') }}
+
 </head>
 
-<body>
+<body >
 
-
+{{ include('header.html.twig') }}
 {% for  message in  app.session.flashBag.get('info') %}
        <div class="alert alert-info">
               {{ message }}
@@ -52,8 +52,9 @@
        </div>
 {% endfor %}
 
-<div class="container">
+
 {% block body%}  {% endblock %}
+<<<<<<< HEAD
 </div>
 {{ include('footer.html.twig') }}
 </body>

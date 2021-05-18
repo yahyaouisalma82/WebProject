@@ -15,4 +15,45 @@ class ShopController extends AbstractController
             'controller_name' => 'ShopController',
         ]);
     }
+
+    /**
+     * @Route("/dog",name= "dog")
+     */
+
+    public function dog(): Response
+    {
+        return $this->render('shop/dog.html.twig', [
+            'controller_name' => 'shopController',
+        ]);
+    }
+
+    /**
+     * @Route("/cat",name= "cat")
+     */
+    public function cat(): Response
+    {
+        return $this->render('shop/cat.html.twig', [
+            'controller_name' => 'shopController',
+        ]);
+    }
+
+    /**
+     * @Route("/fish",name= "fish")
+     */
+    public function fish(): Response
+    {
+        return $this->render('shop/fish.html.twig', [
+            'controller_name' => 'shopController',
+        ]);
+    }
+
+    /**
+     * @Route("/bird",name= "bird")
+     */
+    public function bird(): Response
+    {
+        return $this->render('shop/bird.html.twig', [
+            'controller_name' => 'shopController',
+        ]);
+    }
 }
