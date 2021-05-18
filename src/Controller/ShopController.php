@@ -19,7 +19,7 @@ class ShopController extends AbstractController
     /**
      * @Route("/dog",name= "dog")
      */
-    #hello
+
     public function dog(): Response
     {
         return $this->render('shop/dog.html.twig', [
