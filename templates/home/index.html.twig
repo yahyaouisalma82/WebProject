@@ -1,12 +1,12 @@
 {% extends 'base1.html.twig' %}
 
 {% block title %}Home{% endblock %}
-
+{% block bootstrap %}
+{{ parent() }}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+{% endblock %}
 {% block body %}
 <style>
-    .new-title{
-        margin-left: 450px;
-    }
     .modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
@@ -67,6 +67,9 @@
         padding: 2px 16px;
         background-color: #5cb85c;
         color: white;
+    }
+    .new-title{
+        margin-left: 620px;
     }
     .news-container{
         padding:20px 40px ;
@@ -145,11 +148,14 @@
         padding-top: 30px;
         padding-bottom: 40px;
     }
+    #cards-title{
+        margin-left: 380px;
+    }
     .maincontainer{
         position: relative;
         width: 250px;
         height: 320px;
-        padding-left: 50px;
+        padding-left: 150px;
     }
     .thecard{
         width: 250px;
@@ -261,7 +267,7 @@
             <div class="carousel-inner">
 
                 <div class="item active">
-                    <img src="media/pet_store-509173668-5ad27f86c0647100380c4f0d.jpg" alt="Los Angeles" style="width:100%;">
+                    <img src="media/Capture d’écran 2021-05-19 215128.jpg" alt="Los Angeles" style="width:100%;">
                     <div class="carousel-caption">
                         <h3>Los Angeles</h3>
                         <p>LA is always so much fun!</p>
@@ -269,7 +275,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="media/petstore.jpg" alt="Chicago" style="width:100%;">
+                    <img src="media/banner.jpg" alt="Chicago" style="width:100%;">
                     <div class="carousel-caption">
                         <h1>WELCOME!!</h3>
                             <h2>If You're looking for pet services , PogPaw is the best choice</h2>
@@ -277,7 +283,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="media/petstore.jpg" alt="New York" style="width:100%;">
+                    <img src="media/banner2.jpg" alt="New York" style="width:100%;">
                     <div class="carousel-caption">
                         <h3>New York</h3>
                         <p>We love the Big Apple!</p>
@@ -299,7 +305,7 @@
     </div>
 
     <div class="news-container">
-        <h3 class="new-title"> WHAT'S NEW ? </h3>
+        <h2 class="new-title"> WHAT'S NEW ? </h2>
         <div class="news-content">
             <a class="news-box" href="#">
                 <div class="parent"><div class="child1"></div></div>
@@ -325,7 +331,7 @@
                 <p>Check Out Our Recent Additions In the Shop Section !!</p>
                 <div class="news-date">july 1,2021</div>
             </a></div></div>
-    <div><h2> Planning to Adopt a Pet ? Look at our Recent Additions :</h2></div>
+    <div id="cards-title"><h2> Planning to Adopt a Pet ? Look at our Recent Additions :</h2></div>
     <div class="cards">
         <div class="maincontainer">
             <div class="thecard">
