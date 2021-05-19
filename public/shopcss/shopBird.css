@@ -1,7 +1,6 @@
 body{
     font-family: 'Lobster', cursive;
 }
-
 #my-navbar{
     background-color:#faf8fc;
 
@@ -22,13 +21,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    /*background: #2e0257;*/
-    background-image: url('shopimages/dogLayout.jpeg');
+   background: #2e0257;
+    background-image: url('shopimages/BirdLayout.jpeg');
     position: relative;
     overflow: hidden;
     z-index: 9; }
 .banner, .banner .row {
-    min-height: 700px;
+    min-height: 600px;
     height: calc(100vh - 174px); }
 .banner.inner-page, .banner.inner-page .row {
     min-height: 400px;
@@ -159,7 +158,7 @@ Banner Section
 }
 .product-panel .nav-tabs li a.active,
 .nav-tabs li:hover a{
-    background:#c41df7;
+   background:#c41df7;
     color: #fff;
     border-color: transparent;
 
