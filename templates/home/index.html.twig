@@ -1,81 +1,12 @@
-{% extends 'base.html.twig' %}
+{% extends 'base1.html.twig' %}
 
 {% block title %}Home{% endblock %}
 
 {% block body %}
 <style>
-    html{
-        scroll-behavior: smooth;
-    }
-
-    body{
-        margin: 0;
-        padding: 0;
-    }
-    a{
-        text-decoration: none;
-        color: aliceblue;
-    }
-    .navbar{
-        position:absolute;
-    }
-    .header{
-        width: 100%;
-        position: fixed;
-        background-color:rgba(0, 0, 0, 0.75);
-        z-index: 9999;
-    }
-    .header-navbar{
-        align-items: center;
-        display: flex;
-        position: relative;
-        color: aliceblue;
-    }
-    .navbar-element{
-        padding: 0px 20px;
-        font-size: 30px;
-    }
-    .navbar-element img{
-        cursor: pointer;
-    }
-    .navbar-element a {
-        transition: all 0.3s ease 0s;
-    }
-    .navbar-element a:hover,.navbar-element p:hover {
-        color: purple;
-    }
-    .navbar-account button  {
-        border :none;
-        border-radius: 40px;
-        cursor: pointer;
-        margin: 10px;
-        font-size: 30px;
-        padding: 10px;
-        top: 0px;
-        right: 0px;
-        background-color: aquamarine;
-
-    }
-    .intro{
-        margin-left: 450px;
-    }
-
     .new-title{
         margin-left: 450px;
     }
-
-
-    div h4{
-        font-size: xx-large;
-        font-family: 'Courier New', Courier, monospace;
-        color: aliceblue;
-        padding-left: 200px;
-    }
-    .container1{
-        display :flex;
-    }
-
-
     .modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
@@ -89,7 +20,6 @@
         background-color: rgb(0,0,0); /* Fallback color */
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
-
     /* Modal Content */
     .modal-content {
         position: relative;
@@ -110,12 +40,10 @@
         from {top:-300px; opacity:0}
         to {top:0; opacity:1}
     }
-
     @keyframes animatetop {
         from {top:-300px; opacity:0}
         to {top:0; opacity:1}
     }
-
     /* The Close Button */
     .close {
         color: white;
@@ -123,22 +51,18 @@
         font-size: 28px;
         font-weight: bold;
     }
-
     .close:hover,
     .close:focus {
         color: #000;
         text-decoration: none;
         cursor: pointer;
     }
-
     .modal-header {
         padding: 2px 16px;
         background-color: #5cb85c;
         color: white;
     }
-
     .modal-body {padding: 2px 16px;}
-
     .modal-footer {
         padding: 2px 16px;
         background-color: #5cb85c;
@@ -215,25 +139,6 @@
     .news-span div img{
         opacity:1;
 
-    }
-    .span-container {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 40px;
-        font-weight: 700;
-        padding-left: 60px;
-        color: rgb(90, 39, 105)
-    }
-    .span-content{
-        width: 100px;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 27px;
-        font-weight: 900;
-        color: rgb(255, 255, 255);
-    }
-
-    .container{
-        display: flex;
-        padding-top: 150px;
     }
     .cards{
         display: flex;
@@ -420,7 +325,7 @@
                 <p>Check Out Our Recent Additions In the Shop Section !!</p>
                 <div class="news-date">july 1,2021</div>
             </a></div></div>
-    <div><h4> Planning to Adopt a Pet ? Look at our Recent Additions :</h2></div>
+    <div><h2> Planning to Adopt a Pet ? Look at our Recent Additions :</h2></div>
     <div class="cards">
         <div class="maincontainer">
             <div class="thecard">
@@ -512,6 +417,7 @@
                 </div>
             </div>
         </div></div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 {% endblock %}
