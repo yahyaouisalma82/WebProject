@@ -1,6 +1,9 @@
 {% extends 'base.html.twig' %}
+{% block addSheets %}
+    <link rel="stylesheet" href="shopcss/StyleShop.css">
+{% endblock %}
 {% block body %}
-{{ include ('shop/Section.html.twig') }}
+{{ include ('shop/SectionFish.html.twig') }}
 
             <div class="row">
                 <div class="col-12">
