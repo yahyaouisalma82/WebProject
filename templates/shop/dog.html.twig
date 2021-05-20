@@ -4,12 +4,13 @@
 {% endblock %}
 {% block body %}
     {{ include ('shop/SectionDog.html.twig') }}
-<h2>food</h2>
+<br><br>
+
     <div class="row">
         <div class="col-12">
             <div class="product-detail">
 
-
+                <h2>Pure & natural holistic pet foods for a long and healthy life</h2>
                 <div class="tab-content" id="myTabContent">
                     <!--Single Tab-->
                     <div class="tab-pane fade show active"id="food"role="tabpanel">
@@ -54,8 +55,10 @@
                                 {% endfor %}
 
                                 <!--Single Tab-->
+
                                 <div class="tab-pane fade show active"id="toy"role="tabpanel">
                                     <div class="tab-single">
+                                        <h2>Your pet deserves the best toys</h2>
                                         <div class="row">
                                             {% for product in products %}
                                             {% if product.animal == "dog" and product.type == "toy" %}
@@ -96,8 +99,10 @@
                                             {% endfor %}
 
                                             <!--Single Tab-->
+
                                             <div class="tab-pane fade show active"id="hygienne"role="tabpanel">
                                                 <div class="tab-single">
+                                                    <h2>Extraordinary pet care products</h2>
                                                     <div class="row">
                                                         {% for product in products %}
                                                             {% if product.animal == "dog" and product.type == "hygienne" %}

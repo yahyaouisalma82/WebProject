@@ -13,7 +13,7 @@ class ShopController extends AbstractController
     /**
      * @Route("/dog", name="dog.list")
      */
-    public function dog( ): Response
+    public function dog(): Response
     {
         $repository = $this->getDoctrine()->getRepository('App:Product');
         $products = $repository->findBy([], []);
@@ -43,12 +43,14 @@ class ShopController extends AbstractController
     }
 
     /**
-     * @Route("/bird",name= "bird")
+     * @Route("/bird", name="bird.list")
      */
-    public function bird(): Response
+    public function bird( ): Response
     {
+        $repository = $this->getDoctrine()->getRepository('App:Product');
+        $products = $repository->findBy([], []);
         return $this->render('shop/bird.html.twig', [
-            'controller_name' => 'shopController',
+            'products' => $products
         ]);
     }
 }
