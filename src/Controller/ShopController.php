@@ -23,24 +23,29 @@ class ShopController extends AbstractController
     }
 
     /**
-     * @Route("/cat",name= "cat")
+     * @Route("/cat", name="cat.list")
      */
-    public function cat(): Response
+    public function cat( ): Response
     {
+        $repository = $this->getDoctrine()->getRepository('App:Product');
+        $products = $repository->findBy([], []);
         return $this->render('shop/cat.html.twig', [
-            'controller_name' => 'shopController',
+            'products' => $products
+        ]);
+    }
+    /**
+     * @Route("/fish", name="fish.list")
+     */
+    public function fish( ): Response
+    {
+        $repository = $this->getDoctrine()->getRepository('App:Product');
+        $products = $repository->findBy([], []);
+        return $this->render('shop/fish.html.twig', [
+            'products' => $products
         ]);
     }
 
-    /**
-     * @Route("/fish",name= "fish")
-     */
-    public function fish(): Response
-    {
-        return $this->render('shop/fish.html.twig', [
-            'controller_name' => 'shopController',
-        ]);
-    }
+
 
     /**
      * @Route("/bird", name="bird.list")
