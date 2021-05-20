@@ -17,13 +17,14 @@ class ShopController extends AbstractController
     }
 
     /**
-     * @Route("/dog",name= "dog")
+     * @Route("/dog/{page<\d+>?1}/{number<\d+>?6}", name="product.list")
      */
-
-    public function dog(): Response
+    public function dog($page, $number): Response
     {
+        $repository = $this->getDoctrine()->getRepository('App:Product');
+        $products = $repository->findBy([], ['price'=> 'asc'],$number, ($page - 1) * $number);
         return $this->render('shop/dog.html.twig', [
-            'controller_name' => 'shopController',
+            'products' => $products
         ]);
     }
 
