@@ -1,8 +1,9 @@
 {% extends 'base.html.twig' %}
+{% block title %}Panier{% endblock %}
 {% block body %}
 <div class="bg-light p-3">
     <h1>Votre panier</h1>
-</div>*
+</div>
     {% if items | length >0 %}
         <table class="table">
             <thread>
@@ -17,19 +18,28 @@
             <tbody>
             {% for item in items %}
                 <tr>
-                    <td>{{ items.product.name }}</td>
-                    <td>{{ items.product.price }}</td>
-                    <td>{{ items.quantity }}</td>
-                    <td>{{ items.product.price * item.quantity }}</td>
+                    <td>{{ item.product.name }}</td>
+                    <td>{{ item.product.price }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td>{{ item.product.price * item.quantity }}</td>
                     <td>
-                        <a href="" class="btn btn-danger btn-sm"></a>
+                        <a href="" class="btn btn-danger btn-sm">
+                            <i class="fass fa-trash"></i>
+                        </a>
                     </td>
                 </tr>
             {% endfor %}
             </tbody>
+                <tr>
+                    <td colpan="3">total :</td>
+                    <td>{{ total }}</td>
+                    <td></td>
+                </tr>
+
         </table>
     {% else %}
     <p>Surprise, c'est vide !</p>
+
     {% endif %}
 
 {% endblock %}
