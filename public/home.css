@@ -1,0 +1,212 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(68, 68, 68, 0.9); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+.modal-content {
+    top: 30%;
+    left: 30%;
+    position: fixed;
+    background-color: #452858;
+    width :600px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+.close {
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@-webkit-keyframes slideIn {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+.new-title{
+    text-align: center;
+    font-size: 60px;
+    color: #1e013a;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.news-container{
+    padding:20px 40px ;
+    background-image: url("media/Capture d’écran 2021-05-19 215128.jpg");
+    background-size: cover;
+}
+.news-content{
+    display: flex;
+}
+.news-content a{
+    text-decoration: none;
+}
+.news-box {
+    background-color:rgba(51, 51, 51, 0.5);
+    width: 350px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.parent {
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+    height:200px;
+    overflow: hidden;
+}
+.child1{
+    width: 100%;
+    height: 100%;
+    background-image: url("media/pexels-pranidchakan-boonrom-1350591.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 0.2s;
+}
+.child2{
+    width: 100%;
+    height: 100%;
+    background-image: url("media/japan-cat-cafe-kyoto.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 0.2s;
+}
+.child3{
+    width: 100%;
+    height: 100%;
+    background-image: url("media/walk.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 0.2s;
+}
+.child4{
+    width: 100%;
+    height: 100%;
+    background-image: url("media/dog-food-1296x728-header.webp");
+    background-position: center;
+    background-size: cover;
+    transition: 0.2s;
+}
+.news-box:hover .child1,.news-box:hover .child2,.news-box:hover .child3,.news-box:hover .child4{
+    transform: scale(1.2);
+}
+.news-date{
+    margin:20px;
+    color :yellow
+}
+
+.news-box h1{
+    padding: 0 17px;
+    color: #28015a;
+}
+.news-box p{
+    padding :0 17px;
+    font-size: 20px;
+    line-height: 22px;
+    color: #28015b;
+}
+.news-span div img{
+    opacity:1;
+
+}
+.pet-cards{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+#cards-title{
+    margin-left: 380px;
+}
+.pet-container{
+    position: relative;
+    width: 250px;
+    height: 320px;
+    padding-left: 150px;
+}
+.the-card{
+    width: 250px;
+    height: 320px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.the-card:hover , .the-card:focus{
+    transform:rotateY(180deg)
+}
+.the-front{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background:rgb(150, 102, 218);
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-decoration:underline;
+    color: whitesmoke;
+    border-radius: 20px;
+
+}
+.the-front img{
+    background-size: cover;
+}
+.pet-name{
+    margin-left: 50px;
+    width: 150px;
+    height:30px;
+    position: absolute;
+    border-radius: 50% ;
+    background: rgb(150, 102, 218);;
+}
+.the-back{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    backface-visibility: hidden;
+    background: #e2bfff;
+    color: #333;
+    transform: rotateY(180deg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-decoration:underline;
+    color: rgb(93, 31, 117);
+    border-radius: 20px;
+}
+#pic {
+    background-size: cover;
+}
+
