@@ -26,15 +26,15 @@
                     <td>{{ item.quantity }}</td>
                     <td>{{ item.product.price * item.quantity }}</td>
                     <td>
-                        <a href="" class="btn btn-danger btn-sm">
-                            <i class="fass fa-trash"></i>
-                        </a>
+                        <a href="{{ path('cart_remove', {'id':item.product.id}) }}" >
+                            <img src="shopimages/delete.png" height="30px" width="30px">
+                      </a>
                     </td>
                 </tr>
             {% endfor %}
             </tbody>
                 <tr>
-                    <td colpan="3">total :</td>
+                    <td colpan="3" class="text-right">total :</td>
                     <td>{{ total }}</td>
                     <td></td>
                 </tr>
