@@ -3,10 +3,10 @@
 {% block body %}
     {{ include ('pets/bannerSection.html.twig') }}
     <div class="tab-content" id="myTabContent">
-        {{ include('pets/dog.html.twig') }}
-        {{ include ('pets/cat.html.twig') }}
-        {{ include ('pets/fish.html.twig') }}
-        {{ include ('pets/bird.html.twig') }}
+        {{ include('pets/dog.html.twig',{ 'cat': cats }) }}
+        {{ include ('pets/cat.html.twig',{ 'dogs': dogs}) }}
+        {{ include ('pets/fish.html.twig', { 'birds': birds}) }}
+        {{ include ('pets/bird.html.twig',{ 'fishs': fishs}) }}
     </div>
     </div>
     </div>
