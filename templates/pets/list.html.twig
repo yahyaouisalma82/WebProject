@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+{% block addSheets %} <link rel="stylesheet" href="layout.css"> {% endblock %}
+{% block body %}
+
+    <section class="m-3">
+        <div class="about-area section-padding 30">
+            <div class="container">
+                {% for pet in pets  %}
+                    {% if pet.id  is even  %}
+                <div class="row align-items-center justify-content-between padding-130">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-details mb-40">
+                            <h2>{{ pet.name }}</h2>
+                            <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                            <a href="#"class="btn btn-about">Click Here</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-10">
+                        <div class="about-img mb-40">
+                            <img src="shopimages/cat.jpg"class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                    {% else %}
+                 <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6 col-md-6 col-sm-10">
+                        <div class="about-img mb-40">
+                            <img src="shopimages/cat.jpg"class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-details mb-40">
+                            <h2>{{ pet.name }}</h2>
+                            <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                            <a href="#"class="btn btn-about">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                        {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- About  End-->
+
+{#
+<div class="container">
+    <div class="tab-single">
+    <div class="row">
+        {% for pet in pets  %}
+            <!--Start-->
+            <div class="col-xl-4 col-lg-3 col-md-3 col-9">
+                <div class="single-product">
+                    <div class="product-img">
+                        <a href="#">
+                            <img src="shopimages/cat.jpg" class="main-img" alt="#">
+
+                        </a>
+                        <div class="button-head">
+                            <div class="action-button">
+                                <a data-toggle="modal" data-target="#exampleModal"
+                                   title="Quick view" href="#">
+                                    <i class="far fa-eye"></i><span>Quick Shop</span>
+                                </a>
+                                <a title="Wishlist"href="#"><i class="far fa-heart"></i>
+                                    <span>Add to Wishlist</span></a>
+                                <a title="shopping"href="#"><i class="fas fa-shopping-bag"></i>
+                                    <span>Adopt Now</span></a>
+
+                            </div>
+                            <div class="button-low">
+                                <p>Loli is a nice bird <br> here infos <br> {{ pet.age }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-title">
+                        <h3><a href="">{{ pet.kind }}</a></h3>
+                        <div class="product-price">
+                            <span>$25-00</span>
+                            <p>Loli wants a home u cand adopt heroo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        {#
+    <div class="row">
+        {% for pet in pets %}
+            <div class="card col-5 m-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ pet.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ pet.kind }}</h6>
+                    <p class="card-text">{{ pet.age}}.</p>
+                    <p class="card-text">{{ pet.id}} TND.</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>#}
+{% endblock %}
