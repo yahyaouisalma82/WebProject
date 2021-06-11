@@ -23,9 +23,9 @@ class ShopController extends AbstractController
                 'product'=>$productRepository->find($id),
                 'quantity' =>$quantity
             ];
-            dd($panierWithData);
+
         }
-        return $this->render('cart/index.html.twig',[
+        return $this->render('shop/panier.html.twig',[
             'items'=> $panierWithData
         ]);
     }
@@ -98,7 +98,7 @@ class ShopController extends AbstractController
 
         $session->set('panier',$panier);
 
-         dd($session->get('panier'));
+
 
 
 
