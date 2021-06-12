@@ -1,3 +1,10 @@
+form label{
+    display: flex;
+}
+.sign-up-box{
+    width: 360px;
+    height: 620px;
+}
 .modal {
     display: none;
     position: fixed;
@@ -18,7 +25,8 @@
     left: 30%;
     position: fixed;
     background-color: #452858;
-    width :600px;
+    width :360px;
+    height: 620px;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
@@ -64,8 +72,6 @@
 
 .news-container{
     padding:20px 40px ;
-    background-image: url("media/Capture d’écran 2021-05-19 215128.jpg");
-    background-size: cover;
 }
 .news-content{
     display: flex;
