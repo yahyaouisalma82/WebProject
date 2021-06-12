@@ -21,12 +21,8 @@ form label{
     animation-duration: 0.4s;
 }
 .modal-content {
-    top: 30%;
-    left: 30%;
     position: fixed;
     background-color: #452858;
-    width :360px;
-    height: 620px;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
