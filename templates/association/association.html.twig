@@ -1,126 +1,280 @@
 {% extends 'base.html.twig' %}
 {% block addSheets %}
+
     <link rel="stylesheet" href="shopcss/StyleShop.css">
-    <link rel="stylesheet" href="associationCss/assoc.css">
 {% endblock %}
 {% block body %}
     {{ include('association/Sectionassociation.html.twig') }}
     <br><br>
-    <p style="font-size: 40px">Fired up? Ready for change? Then help move the world </p>
-    <p style="font-size: 40px"> support our current campaigns to stop animal cruelty and suffering today.</p>
+    <p style="font-size: 40px;color: #452858">Fired up? Ready for change? Then help move the world </p>
+    <p style="font-size: 40px;color:#452858"> support our current campaigns to stop animal cruelty and suffering today.</p>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
     <div class="container">
-        <div class="card">
-            <div class="imgBx">
-                <img src="associationsImages/1.jpg">
-            </div>
-            <div class="content">
-                <h2>Antidote Europe</h2>
-                <p>
-                    Antidote Europe s’oppose à l’expérimentation animale pour des raisons strictement scientifiques. Elle oeuvre pour informer sur les dégâts que cette pratique provoque sur la santé humaine et sur l’environnement et promouvoir des méthodes véritablement scientifiques.
-                    www.antidote-europe.org</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="card">
-            <div class="imgBx">
-                <img src="associationsImages/2.jpg">
-            </div>
-            <div class="content">
-                <h2>Alliance Anticorrida</h2>
-                <p>
-                    Fondée en 1994, l’Alliance Anticorrida oeuvre pour abolir les sévices infligés aux taureaux et chevaux de corrida. Elle a notamment fait interdire le « Taureau à la corde » et plusieurs corridas qui produisaient des enfants toreros. L’Alliance Anticorrida met également en œuvre des recours juridiques contre toute activité tauromachique contraire à la législation en vigueur.
-                    www.allianceanticorrida.fr</p>
-            </div>
-        </div>
-    </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-6 col-xl-4">
+                        <article class="post">
+                            <div class="article-v2">
+                                <figure class="article-thumb">
+                                    <a href="#">
+                                        <img style="width: 300px;height: 200px" src="associationsImages/2.jpg" alt="blog image" />
+                                    </a>
+                                </figure>
+                                <!-- /.article-thumb -->
+                                <div class="article-content-main">
+                                    <div class="article-header">
+                                        <h2 class="entry-title"><p href="#">Alliance Anticorrida</p></h2>
+                                        <div class="entry-meta">
+                                            <div class="entry-date">Fondée en 1994, l’Alliance Anticorrida oeuvre pour abolir les sévices infligés aux taureaux et chevaux de corrida. Elle a notamment fait interdire le « Taureau à la corde » et plusieurs corridas qui produisaient des enfants toreros. L’Alliance Anticorrida met également en œuvre des recours juridiques contre toute activité tauromachique contraire à la législation en vigueur.</div>
+                                        </div>
+                                    </div>
 
-    <div class="container">
-        <div class="card">
-            <div class="imgBx">
-                <img src="associationsImages/3.jpg">
-            </div>
-            <div class="content">
-                <h2>AFAAD</h2>
-                <p>
-                    Fondée en 2015, l’AFAAD oeuvre exclusivement sur le sujet des abattoirs. Elle défend le développement des abattoirs mobiles en France ou encore le maintien des abattoirs de proximité. Ses travaux se mènent systématiquement en concertation et en co-construction avec les acteurs de la filière engagés et en faveur d’une meilleure prise en charge de la souffrance et du stress des animaux lors de l’abattage.
-                    www.afaad.net</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="card">
-            <div class="imgBx">
-                <img src="associationsImages/4.jpg">
-            </div>
-            <div class="content">
-                <h2>Antidote Europe</h2>
-                <p>
-                    Antidote Europe s’oppose à l’expérimentation animale pour des raisons strictement scientifiques. Elle oeuvre pour informer sur les dégâts que cette pratique provoque sur la santé humaine et sur l’environnement et promouvoir des méthodes véritablement scientifiques.
-                    www.antidote-europe.org</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="card">
-            <div class="imgBx">
-                <img src="associationsImages/5.jpg">
-            </div>
-            <div class="content">
-                <h2>ASPAS (Association pour la protection des animaux sauvages)</h2>
-                <p>
-                    L’ASPAS oeuvre depuis 1986 pour la protection de la nature, la protection de la faune sauvage, pour la préservation du patrimoine naturel et pour la défense des droits des usagers de la nature.
-                    Elle mène des campagnes d’information pour mobiliser l’opinion publique et interpeller les élus . Elle réalise des expositions, des diaporamas et édite des guides et brochures pour sensibiliser le grand public à la nécessité de protéger les milieux et les espèces.
-                    www.aspas-nature.org
+                                    <!--  /.article-content -->
+                                    <div class="article-footer">
+                                        <div class="row">
+                                            <div class="col-6 text-left footer-link">
+                                                <a href="#" class="more-link">27123456</a>
+                                            </div>
+                                            <!--  /.col-6 -->
+                                            <div class="col-6 text-right footer-meta">
+                                                <a href="#">65 <i class="pe-7s-comment"></i></a>
+                                                <a href="#">50 <i class="pe-7s-share"></i></a>
+                                            </div>
+                                            <!--  /.col-6 -->
+                                        </div>
+                                        <!--  /.row -->
+                                    </div>
+                                    <!--  /.article-footer -->
+                                </div>
+                                <!--  /.article-content-main -->
+                            </div>
+                            <!--  /.article-v2 -->
+                        </article>
+                        <!--  /.post -->
+                    </div>
+                    <!--  /.col-md-6 -->
 
-                </p>
-            </div>
-        </div>
-    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <article class="post">
+                            <div class="article-v2">
+                                <figure class="article-thumb">
+                                    <a href="#">
+                                        <img style="width: 300px;height: 200px" src="associationsImages/3.jpg" alt="blog image" />
+                                    </a>
+                                </figure>
+                                <!-- /.article-thumb -->
+                                <div class="article-content-main">
+                                    <div class="article-header">
+                                        <h2 class="entry-title"><p >Antidote Europe : pour une science responsable</p></h2>
+                                        <div class="entry-meta">
+                                            <div class="entry-date">Antidote Europe s’oppose à l’expérimentation animale pour des raisons strictement scientifiques. Elle oeuvre pour informer sur les dégâts que cette pratique provoque sur la santé humaine et sur l’environnement et promouvoir des méthodes véritablement scientifiques.</div>
 
-    <div class="container">
-        <div class="card">
-            <div class="imgBx">
-                <img src="associationsImages/6.jpg">
+                                        </div>
+
+                                    </div>
+                                    <!--  /.article-content -->
+                                    <div class="article-footer">
+                                        <div class="row">
+                                            <div class="col-6 text-left footer-link">
+                                                <a href="#" class="more-link">77256437</a>
+                                            </div>
+                                            <!--  /.col-6 -->
+                                            <div class="col-6 text-right footer-meta">
+                                                <a href="#">65 <i class="pe-7s-comment"></i></a>
+                                                <a href="#">50 <i class="pe-7s-share"></i></a>
+                                            </div>
+
+                                        </div>
+                                        <!--  /.row -->
+                                    </div>
+                                    <!--  /.article-footer -->
+                                </div>
+                                <!--  /.article-content-main -->
+                            </div>
+                            <!--  /.article-v2 -->
+                        </article>
+                        <!--  /.post -->
+                    </div>
+                    <!--  /.col-md-6 -->
+
+                    <div class="col-md-6 col-xl-4">
+                        <article class="post">
+                            <div class="article-v2">
+                                <figure class="article-thumb">
+                                    <a href="#">
+                                        <img style="width: 300px;height: 200px" src="associationsImages/4.jpg" alt="blog image" />
+                                    </a>
+                                </figure>
+                                <!-- /.article-thumb -->
+                                <div class="article-content-main">
+                                    <div class="article-header">
+                                        <h2 class="entry-title"><p>ASPAS </p></h2>
+                                        <div class="entry-meta">
+                                            <div class="entry-date">L’ASPAS oeuvre depuis 1986 pour la protection de la nature, la protection de la faune sauvage, pour la préservation du patrimoine naturel et pour la défense des droits des usagers de la nature.
+                                                Elle mène des campagnes d’information pour mobiliser l’opinion publique et interpeller les élus .
+                                        </div>
+
+                                    </div>
+
+                                    <!--  /.article-content -->
+                                    <div class="article-footer">
+                                        <div class="row">
+                                            <div class="col-6 text-left footer-link">
+                                                <a href="#" class="more-link">21445673</a>
+                                            </div>
+                                            <!--  /.col-6 -->
+                                            <div class="col-6 text-right footer-meta">
+                                                <a href="#">65 <i class="pe-7s-comment"></i></a>
+                                                <a href="#">50 <i class="pe-7s-share"></i></a>
+                                            </div>
+                                            <!--  /.col-6 -->
+                                        </div>
+                                        <!--  /.row -->
+                                    </div>
+                                    <!--  /.article-footer -->
+                                </div>
+                                <!--  /.article-content-main -->
+                            </div>
+                            <!--  /.article-v2 -->
+                        </article>
+                        <!--  /.post -->
+                    </div>
+                    <!--  /.col-md-6 -->
+                    <div class="col-md-6 col-xl-4">
+                        <article class="post">
+                            <div class="article-v2">
+                                <figure class="article-thumb">
+                                    <a href="#">
+                                        <img style="width: 300px;height: 200px" src="associationsImages/9.jpg" alt="blog image" />
+                                    </a>
+                                </figure>
+                                <!-- /.article-thumb -->
+                                <div class="article-content-main">
+                                    <div class="article-header">
+                                        <h2 class="entry-title"><p href="#">Fondation Brigitte Bardot</p></h2>
+                                        <div class="entry-meta">
+                                            <div class="entry-date">Créée en 1986, la Fondation Brigitte Bardot, à pour principal mission de protéger l’animal sauvage et domestique, en France et dans le monde entier. Elle recueille des milliers d’animaux de ferme et de compagnie, et apporte son soutient dans plus de 60 pays pour des programmes de conservation.</div>
+                                        </div>
+                                    </div>
+
+                                    <!--  /.article-content -->
+                                    <div class="article-footer">
+                                        <div class="row">
+                                            <div class="col-6 text-left footer-link">
+                                                <a href="#" class="more-link">27158456</a>
+                                            </div>
+                                            <!--  /.col-6 -->
+                                            <div class="col-6 text-right footer-meta">
+                                                <a href="#">65 <i class="pe-7s-comment"></i></a>
+                                                <a href="#">50 <i class="pe-7s-share"></i></a>
+                                            </div>
+                                            <!--  /.col-6 -->
+                                        </div>
+                                        <!--  /.row -->
+                                    </div>
+                                    <!--  /.article-footer -->
+                                </div>
+                                <!--  /.article-content-main -->
+                            </div>
+                            <!--  /.article-v2 -->
+                        </article>
+                        <!--  /.post -->
+                    </div>
+                    <!--  /.col-md-6 -->
+                    <div class="col-md-6 col-xl-4">
+                        <article class="post">
+                            <div class="article-v2">
+                                <figure class="article-thumb">
+                                    <a href="#">
+                                        <img style="width: 300px;height: 200px" src="associationsImages/10.jpg" alt="blog image" />
+                                    </a>
+                                </figure>
+                                <!-- /.article-thumb -->
+                                <div class="article-content-main">
+                                    <div class="article-header">
+                                        <h2 class="entry-title"><p href="#">HELP Congo</p></h2>
+                                        <div class="entry-meta">
+                                            <div class="entry-date">Créée en 1990 Help Congo est une association congolaise dont la mission est la protection des primates, et plus particulièrement celle des chimpanzés. Elle oeuvre au maintient de leur habitat. Le projet HELP (Habitat Ecologique et Liberté des Primates) se compose de deux associations partenaires : HELP Congo et HELP International*.
+                                            </div>
+                                    </div>
+
+                                    <!--  /.article-content -->
+                                    <div class="article-footer">
+                                        <div class="row">
+                                            <div class="col-6 text-left footer-link">
+                                                <a href="#" class="more-link">27123458</a>
+                                            </div>
+                                            <!--  /.col-6 -->
+                                            <div class="col-6 text-right footer-meta">
+                                                <a href="#">65 <i class="pe-7s-comment"></i></a>
+                                                <a href="#">50 <i class="pe-7s-share"></i></a>
+                                            </div>
+                                            <!--  /.col-6 -->
+                                        </div>
+                                        <!--  /.row -->
+                                    </div>
+                                    <!--  /.article-footer -->
+                                </div>
+                                <!--  /.article-content-main -->
+                            </div>
+                            <!--  /.article-v2 -->
+                        </article>
+                        <!--  /.post -->
+                    </div>
+                    <!--  /.col-md-6 -->
+                    <div class="col-md-6 col-xl-4">
+                        <article class="post">
+                            <div class="article-v2">
+                                <figure class="article-thumb">
+                                    <a href="#">
+                                        <img style="width: 300px;height: 200px" src="associationsImages/7.jpg" alt="blog image" />
+                                    </a>
+                                </figure>
+                                <!-- /.article-thumb -->
+                                <div class="article-content-main">
+                                    <div class="article-header">
+                                        <h2 class="entry-title"><p href="#">CIWF France </p></h2>
+                                        <div class="entry-meta">
+                                            <div class="entry-date">CIWF est une ONG internationale  créée en 1967 par un éleveur laitier. CIWF promeut le bien-être des animaux d’élevage oeuvre afin pour la fin de l’élevage industriel. Elle met en évidence les liens existants entre bien-être animal, santé publique, sécurité alimentaire et problématiques environnementales.</div>
+                                        </div>
+                                    </div>
+
+                                    <!--  /.article-content -->
+                                    <div class="article-footer">
+                                        <div class="row">
+                                            <div class="col-6 text-left footer-link">
+                                                <a href="#" class="more-link">93323456</a>
+                                            </div>
+                                            <!--  /.col-6 -->
+                                            <div class="col-6 text-right footer-meta">
+                                                <a href="#">65 <i class="pe-7s-comment"></i></a>
+                                                <a href="#">50 <i class="pe-7s-share"></i></a>
+                                            </div>
+                                            <!--  /.col-6 -->
+                                        </div>
+                                        <!--  /.row -->
+                                    </div>
+                                    <!--  /.article-footer -->
+                                </div>
+                                <!--  /.article-content-main -->
+                            </div>
+                            <!--  /.article-v2 -->
+                        </article>
+                        <!--  /.post -->
+                    </div>
+                    <!--  /.col-md-6 -->
+                </div>
+                <!--  /.blog-carousel -->
             </div>
-            <div class="content">
-                <h2>C’est Assez !</h2>
-                <p>
-                    L’association C’est Assez ! oeuvre pour mettre fin au massacre des mammifères marins dans le monde et particulièrement ceux du Japon en lien direct avec l’approvisionnement des delphinariums. Elle dénonce l’imposture des delphinariums et veut obtenir leur fermeture progressive en Europe et la réhabilitation de tous les cétacés captifs dans des sanctuaires marins.
-                    www.cestassez.fr</p>
-            </div>
+            <!--  /.col-12 -->
         </div>
-    </div>
-    <div class="container">
-        <div class="card">
-            <div class="imgBx">
-                <img src="associationsImages/7.jpg">
-            </div>
-            <div class="content">
-                <h2>CIWF France (Compassion In World Farming)</h2>
-                <p>
-                    CIWF est une ONG internationale  créée en 1967 par un éleveur laitier. CIWF promeut le bien-être des animaux d’élevage oeuvre afin pour la fin de l’élevage industriel. Elle met en évidence les liens existants entre bien-être animal, santé publique, sécurité alimentaire et problématiques environnementales.
-                    www.ciwf.fr</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="card">
-            <div class="imgBx">
-                <img src="associationsImages/8.jpg">
-            </div>
-            <div class="content">
-                <h2>CNSPA (Confédération Nationale des SPA)</h2>
-                <p>
-                    La Confédération Nationale des SPA de France, fondée en 1926 représente et soutient 260 refuges gérés par des associations autonomes, présentes sur 94 départements. Ces refuges prennent en charge 180 000 animaux chaque année.
-                    www.cnspa.fr</p>
-            </div>
-        </div>
+        <!--  /.row -->
     </div>
                 <!----->
                 <br><br>
                 <table class="table">
-                    <td style="font-size: 30px"><br><br><p>Support our current campaigns and help to create a world where animal suffering is never acceptable
+                    <td style="font-size: 30px"><br><br><h1 style="color: red;text-align: center">Take Action !</h1><p>Support our current campaigns and help to create a world where animal suffering is never acceptable
                             Throughout our history, our supporters have campaigned to make life better for animals – persuading governments, international bodies, companies, communities and individuals to get serious about protecting animals. Thanks to our supporters, we’ve made life better for billions of animals. We’ve stopped animal cruelty around the world. And we continue to speak up and speak out every day – with support from people like you, who know that change is always possible.</p></td>
                     <td><br> <img  src="shopimages/action.jpeg" class="main-img" alt="#"></td>
                 </table>
