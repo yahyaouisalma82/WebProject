@@ -3,8 +3,13 @@
 namespace App\Controller;
 
 use App\Entity\PetForAdoption;
+use App\Repository\PetForAdoptionRepository;
+use App\Service\Cart\CartService;
+use App\Service\Cart\PetCartService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -40,4 +45,39 @@ class PetsController extends AbstractController
             'controller_name' => 'PetsController','pets' => $pets
         ]);
     }
+
+    /**
+     * @Route("/favorites",name="pet_cart_index")
+     */
+    public function favorites(PetCartService  $petCartService): Response
+    {
+        return $this->render('pets/wishlist.html.twig',[
+            'favorites'=> $petCartService->getFullCart(),
+        ]);
+
+    }
+
+
+
+
+    /**
+     * @Route("/favorites/add/{id}",name="pet_cart_add")
+     */
+    public function add($id,PetCartService  $petCartService): \Symfony\Component\HttpFoundation\RedirectResponse
+    {
+        $petCartService->add($id);
+        return $this->redirectToroute("pet_cart_index");
+
+    }
+
+    /**
+     * @Route("/favorites/remove/{id}", name="pet_cart_remove")
+     */
+
+    public function remove($id, PetCartService $petCartService){
+        $petCartService->remove($id);
+
+        return $this->redirectToRoute("pet_cart_index");
+    }
+
 }

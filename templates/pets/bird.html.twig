@@ -7,7 +7,7 @@
                 <div class="single-product">
                     <div class="product-img">
                         <a href="#">
-                            <img src="shopimages/cat.jpg" class="main-img" alt="#">
+                            <img src="shopimages/11.jpg" class="main-img" alt="#">
 
                         </a>
                         <div class="button-head">
@@ -16,10 +16,10 @@
                                    title="Quick view" href="#">
                                     <i class="far fa-eye"></i><span>Quick Shop</span>
                                 </a>
-                                <a title="Wishlist"href="#"><i class="far fa-heart"></i>
+                                <a title="Wishlist"href="{{ path('pet_cart_add',{'id':bird.id}) }}"><i class="far fa-heart"></i>
                                     <span>Add to Wishlist</span></a>
-                                <a title="shopping"href="#"><i class="fas fa-shopping-bag"></i>
-                                    <span>Adopt Now</span></a>
+                                <a title="shopping"href="{{ path('pet_cart_add',{'id':bird.id}) }}"><i class="fas fa-shopping-bag"></i>
+                                    <span>Adopt Now !</span></a>
 
                             </div>
                             <div class="button-low">
@@ -38,7 +38,7 @@
             </div>
             {% endfor %}
             <!----->
-            {#
+
             <!--Start-->
             <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                 <div class="single-product">

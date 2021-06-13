@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+{% block title %}Wishlist{% endblock %}
+{% block addSheets %}
+    <link rel="stylesheet" href="shopcss/StyleShop.css">
+{% endblock %}
+{% block body %}
+    <div class="bg-light p-3">
+        <h1>Your Favorites</h1>
+    </div>
+    {% if favorites | length >0 %}
+        <table class="table">
+            <thread>
+                <tr>
+                    <th>PetName</th>
+                    <th>age</th>
+                    <th>kind</th>
+                    <th>gender</th>
+                    <th>color</th>
+                    <th>location</th>
+
+                </tr>
+            </thread>
+            <tbody>
+            {% for favorite in favorites %}
+                <tr>
+                    <td>{{ favorite.pet.name }}</td>
+                    <td>{{ favorite.pet.age }}</td>
+                    <td>{{ favorite.pet.kind }}</td>
+                    <td>{{ favorite.pet.gender }}</td>
+                    <td>{{ favorite.pet.color }}</td>
+                    <td>{{ favorite.pet.location }}</td>
+                    <td>
+                        <a href="{{ path('pet_cart_remove', {'id':favorite.pet.id}) }}" >
+                            <img src="shopimages/delete.png" height="30px" width="30px">
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+
+
+        </table>
+    {% else %}
+        <p>Surprise, c'est vide !</p>
+
+    {% endif %}
+
+{% endblock %}
