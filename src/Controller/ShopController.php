@@ -96,4 +96,13 @@ class ShopController extends AbstractController
 
         return $this->redirectToRoute("cart_index");
     }
+
+    /**
+     * @Route("/submit",name="submit")
+     */
+    public function submit(SessionInterface $session){
+        $this->addFlash('success', "votre commande sera disponible dans notre boutique");
+        return $this->render("shop/submit.html.twig", []);
+    }
+
 }
