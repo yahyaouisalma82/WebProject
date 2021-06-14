@@ -59,7 +59,7 @@ body{
     text-align: center; }
 @media (min-width: 768px) {
     .banner .banner-content {
-        margin-top: 50%; } }
+        margin-top: 50%; color: black } }
 .banner.inner-page .banner-content {
     margin-top: 20%;
     text-align: center; }

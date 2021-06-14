@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\PetForAdoption;
 use App\Repository\PetForAdoptionRepository;
-use App\Service\Cart\CartService;
 use App\Service\Cart\PetCartService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -27,10 +26,10 @@ class PetsController extends AbstractController
         $cats =$repository->findBy(array('kind' => 'cat'));
         $dogs =$repository->findBy(array('kind' => 'dog'));
         $birds =$repository->findBy(array('kind' => 'bird'));
-        $fishs =$repository->findBy(array('kind' => 'fish'));
+        $rabbits =$repository->findBy(array('kind' => 'rabbit'));
         return $this->render('pets/index.html.twig', [
             'controller_name' => 'PetsController','cats' => $cats,
-            'dogs' => $dogs , 'birds' => $birds, 'fishs' => $fishs
+            'dogs' => $dogs , 'birds' => $birds, 'rabbits' => $rabbits
         ]);
     }
 
@@ -49,7 +48,7 @@ class PetsController extends AbstractController
     /**
      * @Route("/favorites",name="pet_cart_index")
      */
-    public function favorites(PetCartService  $petCartService): Response
+    public function favorites(PetCartService  $petCartService)
     {
         return $this->render('pets/wishlist.html.twig',[
             'favorites'=> $petCartService->getFullCart(),
@@ -63,7 +62,7 @@ class PetsController extends AbstractController
     /**
      * @Route("/favorites/add/{id}",name="pet_cart_add")
      */
-    public function add($id,PetCartService  $petCartService): \Symfony\Component\HttpFoundation\RedirectResponse
+    public function add($id,PetCartService  $petCartService)
     {
         $petCartService->add($id);
         return $this->redirectToroute("pet_cart_index");

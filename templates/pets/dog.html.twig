@@ -1,4 +1,4 @@
-<div class="tab-pane fade show active"id="Bird"role="tabpanel">
+<div class="tab-pane fade show active"id="dog"role="tabpanel">
     <div class="tab-single">
         <div class="row">
             {% for dog in dogs  %}
@@ -7,13 +7,12 @@
                 <div class="single-product">
                     <div class="product-img">
                         <a href="#">
-                            <img src="{{ dog.photoFile }}" class="main-img" style="height: content-box"   alt="#">
+                            <img src="{{ dog.photoFile }}" class="main-img" style="height: 180px;width: 350px"   alt="#">
 
                         </a>
                         <div class="button-head">
                             <div class="action-button">
-                                <a data-toggle="modal" data-target="#exampleModal"
-                                   title="Quick view" href="{{ path('petsList') }}">
+                                <a title="Quick view" href="{{ path('petsList') }}">
                                     <i class="far fa-eye"></i><span>View List</span>
                                 </a>
                                 <a title="Wishlist" href="{{ path('pet_cart_add',{'id':dog.id}) }}"><i class="far fa-heart"></i>
