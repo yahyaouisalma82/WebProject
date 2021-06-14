@@ -4,6 +4,35 @@
 {% block addSheets %}
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="{{ asset('home.css') }}" >
+    <style>
+        #introductionBox{
+            display: flex;
+            margin:10px 10px 10px 10px;
+        }
+        #introductionBox h1{
+            font-size: 50px;
+            color: #7552b6;
+            margin-bottom: 20px;
+        }
+        #introductionBox h2{
+            margin: 10px 10px 10px 10px;
+        }
+        .div2{
+            margin: auto;
+            display: flex;
+        }
+        .div2 h3{
+            margin:30px 15px;
+        }
+        .div3{
+            margin: auto;
+            display: flex;
+        }
+        .div3 img{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    </style>
 {% endblock %}
 {% block body %}
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -47,6 +76,35 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="introductionBox">
+        <img src="media/catOnWhite.jpg">
+        <div>
+        <h1>Welcome To PogPaw</h1>
+        <h2>Your pet's health and well-being are our top priority</h2>
+        PogPaw is a new tunisian project that aims at providing the best pet-related services.We have gathered the finest items to put in sale ,<br> the greatest veterinarians to keep your pets healthy and gathered the most popular events taking place near your location. <br>Just a click of a button and you'll get what you came looking for !
+        <h2>What do we offer ?</h2>
+            <div>
+            <div class="div2">
+        <div class="div3">
+            <img src="media/paw.png"><h3>Health Care</h3>
+        </div>
+        <div class="div3">
+            <img src="media/grooming.png"><h3>Accessories</h3>
+        </div></div>
+                <div class="div2">
+                <div class="div3">
+                    <img src="media/pet-house.png"><h3>Adoption</h3>
+                </div>
+                <div class="div3">
+                    <img src="media/pet-food.png"><h3>Animal Food</h3>
+                </div></div>
+                <div class="div2">
+                    <div class="div3">
+                        <img src="media/cage.png"><h3>Animal Homes </h3></div>
+                    <div class="div3"> <img src="media/calendar.png"><h3>Events</h3></div>
+                </div></div>
+            </div></div>
     </div>
     <div class="news-container">
         <h2 class="new-title"> WHAT'S NEW ? </h2>
