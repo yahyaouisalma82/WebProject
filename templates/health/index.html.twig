@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Health{% endblock %}
+{% block addSheets %}
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="{{ asset('health.css') }}" >
+
+{% endblock %}
+{% block body %}
+    <h1 style="text-align: center">Welcome to our health page</h1>
+    <img src="media/veterinary.jpg" class="couverture" style="width: 1345px;
+    height: 450px;margin-bottom: 25px;" alt="veterinaire">
+
+    <h2 style="color:#d541ef ;text-decoration: #ffe822 underline;padding-left: 25px">Dog Health :</h2>
+    <div class="destrib">
+
+           <div class="cont" >
+               <a href="{{ 'skinissues' }}" class="nav-link"><img src="media/dogsad.jpg" alt="sad dog" class="image" style="height: 225px;"></a>
+
+               <p style="padding-left: 15px" > 12 signs of skin issues in dogs</p>
+        </div>
+        <div class="cont" >
+            <img src="media/dogsick.jpg" alt="sick dog" class="image" style="
+    height: 225px;">
+            <p style="padding-left: 15px">Top 10 signs your Dog is sick</p>
+        </div>
+
+        <div class="cont" >
+            <img src="media/happydog.jpg" alt="happy dog" class="image" style="
+    height: 225px;">
+            <p style="padding-left: 15px">How old is your dog in human years</p>
+        </div>
+
+    </div>
+    <h2 style="color:#d541ef ;text-decoration: #ffe822 underline;padding-left: 25px">Cat Health :</h2>
+    <div class="destrib">
+
+        <div class="cont" >
+
+            <img src="media/sadcat.jpg" alt="sad cat" class="image" style="height: 225px;">
+            <p style="padding-left: 15px" > 5 Silent killers of your cat</p>
+        </div>
+        <div class="cont" >
+            <img src="media/smallcat.jpg" alt="small cat" class="image" style="
+    height: 225px;">
+            <p style="padding-left: 15px">6 things you must know about cat food</p>
+        </div>
+
+        <div class="cont" >
+            <img src="media/cat.jpg" alt="cat" class="image" style="
+    height: 225px;">
+            <p style="padding-left: 15px">How old is your Cat in human years</p>
+        </div>
+
+    </div>
+{% endblock %}

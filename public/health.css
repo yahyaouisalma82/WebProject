@@ -1,0 +1,24 @@
+
+.couverture {
+    width: 1345px;
+    height: 300px;
+    margin-bottom: 25px;
+}
+.destrib{
+    display: grid;
+    grid-gap: 50px ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px;
+}
+.cont{
+    display: grid;
+    grid-gap: 50px 50px ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 50px;
+}
+.image{
+
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+}
