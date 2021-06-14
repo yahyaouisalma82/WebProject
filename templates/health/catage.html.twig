@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Health{% endblock %}
+{% block addSheets %}
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="{{ asset('health.css') }}" >
+
+{% endblock %}
+{% block body %}
+    <h1 class="titre">
+        Know The Age Of your Cat
+    </h1>
+    <div class="artic">
+        <div>
+            <p>Beginning at around age 9, your cat enters senior years. At this stage, cats often begin to develop diseases common to their senior-human counterparts, such as diabetes, heart disease, hyperthyroidism, kidney disease and cancer. In fact, one out of 10 pets that appears healthy, has an underlying disease.</p>
+
+            <p> First, identify your cat's real age using this chart. Then, discuss ways to keep your pet healthy with your veterinarian.</p>
+            <h2>Cat Age Chart: </h2>
+            <img src="media/catage.jpg"alt="catage">
+        </div>
+        <div>
+            <img src="media/catfoto4.jpg" alt="catfoto" style="width: 300px;margin-bottom: 250px">
+            <img src="media/catfoto5.jpg" alt="catfoto" style="width: 300px;margin-bottom: 250px">
+            <img src="media/catfoto6.jpg" alt="catfoto" style="width: 300px;margin-bottom: 250px">
+        </div>
+    </div>
+    <div>
+        <h2>More Information In this Video:</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DeQbITr78MY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-left: 150px;"></iframe>
+    </div>
+{% endblock %}

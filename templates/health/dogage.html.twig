@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Health{% endblock %}
+{% block addSheets %}
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="{{ asset('health.css') }}" >
+
+{% endblock %}
+{% block body %}
+    <h1 class="titre">
+        Know The Age Of your Dog
+    </h1>
+    <div class="artic">
+        <div>
+           <p> If you own a dog, you've heard this rule: 1 year for Fido equals 7 years for you. Turns out, the math isn't that simple. Dogs mature more quickly than we do early on. So the first year of your fuzzy friend’s life is equal to about 15 human years.</p>
+
+
+
+            <p>Size and breed also play a role. Smaller dogs tend to live longer than larger ones, but they may mature more quickly in the first few years of life. A huge pup might age more slowly at first, but be nearing middle age at 5. Tiny and toy breeds don't become "seniors" until around age 10. Medium-sized pooches are somewhere in the middle on both counts.</p>
+
+            <h2>dogs age chart</h2>
+            <img src="media/dogage.jpg" alt="dogage">
+
+            <h2> Clues to Look For</h2>
+            <p>If you’ve adopted a puppy or dog but don't know their history, you may not know how old they are. Even if you don’t know the birth date, you can still guess their age.</p>
+
+            <p> Their teeth should give you a rough idea of their age. These guidelines will vary from dog to dog, and they also depend on the kind of dental care (if any) they had before you got them.</p>
+            <ul>
+                <li>By 8 weeks: All baby teeth are in.
+                <li> By 7 months: All permanent teeth are in and are white and clean.
+                <li>By 1-2 years: Teeth are duller and the back teeth may have some yellowing.
+                <li> By 3-5 years: All teeth may have tartar buildup and some tooth wear.
+                <li>  By 5-10 years: Teeth show more wear and signs of disease.
+                <li>  By 10-15 years: Teeth are worn, and heavy tartar buildup is likely. Some teeth may be missing.
+            </ul>
+           <p> Your vet can also guess their age based on a complete physical exam or tests that look at bones, joints, muscles, and internal organs. Senior dogs might show some specific signs of aging.</p>
+            <ul>
+                <li> Cloudy eyes
+                <li> Gray hair. It starts around the muzzle then spreads to other areas of the face, head, and body.
+                <li> Loose skin
+                <li> Stiff legs
+            </ul>
+        </div>
+        <div>
+            <img src="media/longfoto2.jpg"alt="longfoto2" style="padding-bottom: 150px;width: 300px">
+            <img src="media/longfoto2.png" alt="long picture" style="width: 300px">
+        </div>
+    </div>
+        <div>
+            <h2>More information in this video: </h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nO-q9wD4nWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin-left: 150px;"></iframe>
+        </div>
+{% endblock %}

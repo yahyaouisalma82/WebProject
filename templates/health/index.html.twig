@@ -11,46 +11,63 @@
     <img src="media/veterinary.jpg" class="couverture" style="width: 1345px;
     height: 450px;margin-bottom: 25px;" alt="veterinaire">
 
-    <h2 style="color:#d541ef ;text-decoration: #ffe822 underline;padding-left: 25px">Dog Health :</h2>
+    <h2>Dog Health :</h2>
     <div class="destrib">
-
+        <a href="{{ 'skinissues' }}" class="nav-link">
            <div class="cont" >
-               <a href="{{ 'skinissues' }}" class="nav-link"><img src="media/dogsad.jpg" alt="sad dog" class="image" style="height: 225px;"></a>
+               <img src="media/dogsad.jpg" alt="sad dog" class="image" style="height: 225px;">
 
                <p style="padding-left: 15px" > 12 signs of skin issues in dogs</p>
+
         </div>
+        </a>
+        <a href="{{ 'dogsick' }}" class="nav-link">
         <div class="cont" >
             <img src="media/dogsick.jpg" alt="sick dog" class="image" style="
     height: 225px;">
             <p style="padding-left: 15px">Top 10 signs your Dog is sick</p>
         </div>
-
-        <div class="cont" >
+        </a>
+        <a href="{{ 'dogage' }}" class="nav-link">
+        <div class="cont" class="nav-link" >
             <img src="media/happydog.jpg" alt="happy dog" class="image" style="
     height: 225px;">
             <p style="padding-left: 15px">How old is your dog in human years</p>
         </div>
-
+        </a>
     </div>
-    <h2 style="color:#d541ef ;text-decoration: #ffe822 underline;padding-left: 25px">Cat Health :</h2>
+    <h2 >Cat Health :</h2>
     <div class="destrib">
-
+        <a href="{{ 'catsick' }}" class="nav-link">
         <div class="cont" >
 
             <img src="media/sadcat.jpg" alt="sad cat" class="image" style="height: 225px;">
             <p style="padding-left: 15px" > 5 Silent killers of your cat</p>
         </div>
+        </a>
+        <a href="{{ 'catfood' }}" class="nav-link">
         <div class="cont" >
             <img src="media/smallcat.jpg" alt="small cat" class="image" style="
     height: 225px;">
             <p style="padding-left: 15px">6 things you must know about cat food</p>
         </div>
-
+        </a>
+        <a href="{{ 'catage' }}" class="nav-link">
         <div class="cont" >
             <img src="media/cat.jpg" alt="cat" class="image" style="
     height: 225px;">
             <p style="padding-left: 15px">How old is your Cat in human years</p>
         </div>
+        </a>
 
+    </div>
+    <h2>We Recommend Waching This Videos: </h2>
+    <div style="display: grid;grid-template-columns: 1fr 1fr;grid-template-rows:350px 350px 350px ;grid-gap: 50px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gogHgzpzjhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NDKOgGcQZ48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SjmRPWYnoJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/InkWIPUFVdM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6HHhdEQhqWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lArwj8ELa10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 {% endblock %}
