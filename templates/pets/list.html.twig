@@ -4,15 +4,19 @@
 
     <section class="m-3">
         <div class="about-area section-padding 30">
-            <div class="container">
+            <div class="container" style="background-color: #f4f0ff">
                 {% for pet in pets  %}
                     {% if pet.id  is even  %}
                 <div class="row align-items-center justify-content-between padding-130">
                     <div class="col-lg-5 col-md-6">
                         <div class="about-details mb-40">
                             <h2>{{ pet.name }}</h2>
-                            <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                            <a href="#"class="btn btn-about">Click Here</a>
+                            <p>
+                                A lovely {{ pet.gender }} {{ pet.color }} pet<br>
+                                {{ pet.age }} age <br>
+                                {{ pet.description }}
+                            </p>
+                            <a href="#"class="btn btn-about">Adopt now</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-10">
@@ -25,14 +29,18 @@
                  <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6 col-md-6 col-sm-10">
                         <div class="about-img mb-40">
-                            <img src="shopimages/cat.jpg"class="img-fluid" alt="">
+                            <img src="{{ pet.photoFile }}"class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-6">
                         <div class="about-details mb-40">
                             <h2>{{ pet.name }}</h2>
-                            <p>Enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                            <a href="#"class="btn btn-about">Know More</a>
+                            <p>
+                                A lovely {{ pet.gender }} {{ pet.color }} pet<br>
+                                {{ pet.age }} age <br>
+                                {{ pet.description }}
+                            </p>
+                            <a href="{{ path('contact') }}"class="btn btn-about">Adopt now</a>
                         </div>
                     </div>
                 </div>
