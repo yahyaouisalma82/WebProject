@@ -6,14 +6,15 @@ form label{
     width: 360px;
     height: 620px;
 }
+
 .modal {
     display: none;
     position: fixed;
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 70%; /* Full width */
-    height: 70%; /* Full height */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(68, 68, 68, 0.9); /* Black w/ opacity */
     -webkit-animation-name: fadeIn;
@@ -23,11 +24,41 @@ form label{
 }
 .modal-content {
     position: fixed;
+    width: 600px;
+    margin-left: 470px;
     background-color: #452858;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s;
+}
+#signBtn,a#login{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #452858;
+    margin:0 0.3em 0.3em 650px;
+    border-radius:100px;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    font-size: xx-large;
+    color:#452858;
+    text-align:center;
+    transition: all 0.2s;
+}
+#signBtn:hover,a#login:hover{
+    color:#FFFFFF;
+    background-color:#452858;
+}
+@media all and (max-width:30em){
+    #signBtn{
+        display:block;
+        margin:0.4em auto;
+    }
+}
+.login-description{
+    margin: 50px 100px;
 }
 .close {
     color: rgb(255, 255, 255);
@@ -60,10 +91,7 @@ form label{
     from {opacity: 0}
     to {opacity: 1}
 }
-#signBtn{
-    border-radius: 30px;
 
-}
 .new-title{
     text-align: center;
     font-size: 60px;
