@@ -32,7 +32,32 @@ form label{
     animation-name: slideIn;
     animation-duration: 0.4s;
 }
-#signBtn,a#login{
+a#login{
+    display:inline-block;
+    padding:0.35em 1.8em;
+    border:0.1em solid #452858;
+    margin:0 0.3em 0.3em 650px;
+    border-radius:100px;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    font-size: xx-large;
+    color:#452858;
+    text-align:center;
+    transition: all 0.2s;
+}
+a#login:hover{
+    color:#FFFFFF;
+    background-color:#452858;
+}
+@media all and (max-width:30em){
+    a#login{
+        display:block;
+        margin:0.4em auto;
+    }
+}
+#signBtn{
     display:inline-block;
     padding:0.35em 1.2em;
     border:0.1em solid #452858;
@@ -47,7 +72,7 @@ form label{
     text-align:center;
     transition: all 0.2s;
 }
-#signBtn:hover,a#login:hover{
+#signBtn:hover{
     color:#FFFFFF;
     background-color:#452858;
 }
