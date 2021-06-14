@@ -2,7 +2,9 @@
 
 namespace App\Controller;
 
+use App\Entity\Account;
 use App\Entity\User;
+use App\Form\AccountType;
 use App\Form\UserType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -15,8 +17,8 @@ class HomeController extends AbstractController
     #[Route('/home', name: 'home')]
     public function index(EntityManagerInterface $manager,Request $request): Response
     {
-        $user=new User();
-        $form=$this->createForm(UserType::class,$user);
+        $user=new Account();
+        $form=$this->createForm(AccountType::class,$user);
         $form->handleRequest($request);
         if ($form->isSubmitted()) {
             $manager->persist($user);
