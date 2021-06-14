@@ -7,31 +7,31 @@
                 <div class="single-product">
                     <div class="product-img">
                         <a href="#">
-                            <img src="shopimages/11.jpg" class="main-img" alt="#">
+                            <img src="{{ dog.photoFile }}" class="main-img" height="100"   alt="#">
 
                         </a>
                         <div class="button-head">
                             <div class="action-button">
                                 <a data-toggle="modal" data-target="#exampleModal"
-                                   title="Quick view" href="#">
-                                    <i class="far fa-eye"></i><span>Quick Shop</span>
+                                   title="Quick view" href="{{ path('petsList') }}">
+                                    <i class="far fa-eye"></i><span>View List</span>
                                 </a>
-                                <a title="Wishlist"href="{{ path('pet_cart_add',{'id':dog.id}) }}"><i class="far fa-heart"></i>
+                                <a title="Wishlist" href="{{ path('pet_cart_add',{'id':dog.id}) }}"><i class="far fa-heart"></i>
                                     <span>Add to Wishlist</span></a>
-                                <a title="shopping"href="{{ path('pet_cart_add',{'id':dog.id}) }}"><i class="fas fa-shopping-bag"></i>
-                                    <span>Adopt Now !</span></a>
+                                <a title="shopping"href="{{ path('dog.list') }}"><i class="fas fa-shopping-bag"></i>
+                                    <span>Quick Shop</span></a>
 
                             </div>
                             <div class="button-low">
-                                <p>Loli is a nice bird</p>
+                                <a title="Add to cart" href="{{ path('contact') }}">Contact Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="product-title">
-                        <h3><a href="">pet.kind</a></h3>
+                        <h3>{{ dog.name }}</h3>
                         <div class="product-price">
-                            <span>$25-00</span>
-                            <p>Loli wants a home u cand adopt heroo</p>
+                            <p>A {{ dog.gender }} {{ dog.color }} dog </p>
+                            <span>{{ dog.age }} age</span>
                         </div>
                     </div>
                 </div>
