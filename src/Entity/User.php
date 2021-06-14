@@ -53,21 +53,6 @@ class User implements UserInterface
      */
     private $aPropos;
 
-    /**
-     * @ORM\OneToMany(targetEntity=PetForAdoption::class, mappedBy="owner")
-     */
-    private $myPetsForAdoption;
-
-    /**
-     * @ORM\OneToMany(targetEntity=BlogPost::class, mappedBy="user", orphanRemoval=true)
-     */
-    private $blogPosts;
-
-    public function __construct()
-    {
-        $this->myPetsForAdoption = new ArrayCollection();
-        $this->blogPosts = new ArrayCollection();
-    }
 
     public function getId(): ?int
     {
@@ -186,63 +171,4 @@ class User implements UserInterface
         return $this;
     }
 
-    /**
-     * @return Collection|PetForAdoption[]
-     */
-    public function getMyPetsForAdoption(): Collection
-    {
-        return $this->myPetsForAdoption;
-    }
-
-    public function addMyPetsForAdoption(PetForAdoption $myPetsForAdoption): self
-    {
-        if (!$this->myPetsForAdoption->contains($myPetsForAdoption)) {
-            $this->myPetsForAdoption[] = $myPetsForAdoption;
-            $myPetsForAdoption->setOwner($this);
-        }
-
-        return $this;
-    }
-
-    public function removeMyPetsForAdoption(PetForAdoption $myPetsForAdoption): self
-    {
-        if ($this->myPetsForAdoption->removeElement($myPetsForAdoption)) {
-            // set the owning side to null (unless already changed)
-            if ($myPetsForAdoption->getOwner() === $this) {
-                $myPetsForAdoption->setOwner(null);
-            }
-        }
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|BlogPost[]
-     */
-    public function getBlogPosts(): Collection
-    {
-        return $this->blogPosts;
-    }
-
-    public function addBlogPost(BlogPost $blogPost): self
-    {
-        if (!$this->blogPosts->contains($blogPost)) {
-            $this->blogPosts[] = $blogPost;
-            $blogPost->setUser($this);
-        }
-
-        return $this;
-    }
-
-    public function removeBlogPost(BlogPost $blogPost): self
-    {
-        if ($this->blogPosts->removeElement($blogPost)) {
-            // set the owning side to null (unless already changed)
-            if ($blogPost->getUser() === $this) {
-                $blogPost->setUser(null);
-            }
-        }
-
-        return $this;
-    }
 }
