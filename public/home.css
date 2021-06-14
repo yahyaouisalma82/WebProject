@@ -1,3 +1,4 @@
+
 form label{
     display: flex;
 }
@@ -11,8 +12,8 @@ form label{
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 70%; /* Full width */
+    height: 70%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(68, 68, 68, 0.9); /* Black w/ opacity */
     -webkit-animation-name: fadeIn;
@@ -58,6 +59,10 @@ form label{
 @keyframes fadeIn {
     from {opacity: 0}
     to {opacity: 1}
+}
+#signBtn{
+    border-radius: 30px;
+
 }
 .new-title{
     text-align: center;

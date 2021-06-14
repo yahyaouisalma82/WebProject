@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Home{% endblock %}
+
 {% block addSheets %}
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="{{ asset('home.css') }}" >
@@ -37,7 +37,6 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <button id="signBtn">sign up</button>
     <div id="myModal" class="modal">
         <div class="modal-content"><span class="close">&times;</span>
             <div class="row footer-newsletter justify-content-center">
@@ -51,122 +50,32 @@
     <div class="news-container">
         <h2 class="new-title"> WHAT'S NEW ? </h2>
         <div class="news-content">
-            <a class="news-box" href="#">
+            <a class="news-box" href="{{ 'association' }}">
                 <div class="parent"><div class="child1"></div></div>
                 <h1 class="news-h1">JCI Bizerte : Get Your Pet Vaccinated ! </h1>
                 <p>"Be Sure To Attend Our Next Event 25/7/2021 Where We'll Be Offering Free Vaccine For All Your Pets" -JCI President</p>
                 <div class="news-date">july 10,2021</div>
             </a>
-            <a class="news-box" href="#">
+            <a class="news-box" href="{{ 'association' }}">
                 <div class="parent"><div class="child2"></div></div>
                 <h1 class="news-h1">World's First Cat House  ! </h1>
                 <p>"We're Happy To Annouce Our Biggest Project So Far : A House Dedicated For Cats And Cat Lovers" </p>
                 <div class="news-date">july 5,2021</div>
             </a>
-            <a class="news-box" href="#">
+            <a class="news-box" href="{{ 'association' }}">
                 <div class="parent"><div class="child3"></div></div>
                 <h1 class="news-h1">A Park to Walk With Your Pets !  </h1>
                 <p>"Help Us Collect Funds For This New Project : A Park In "Centre Urbain Nord" " -JCI President</p>
                 <div class="news-date">july 3,2021</div>
             </a>
-            <a class="news-box" href="#">
+            <a class="news-box" href="/dog">
                 <div class="parent"><div class="child4"></div></div>
                 <h1 class="news-h1">New Items In The Shop !! </h1>
                 <p>Check Out Our Recent Additions In the Shop Section !!</p>
                 <div class="news-date">july 1,2021</div>
             </a></div></div>
-    <div id="cards-title"><h2> Planning to Adopt a Pet ? Look at our Recent Additions :</h2></div>
-    <div class="pet-cards">
-        <div class="pet-container">
-            <div class="the-card">
-                <div class="the-front"><div class="pet-name">Marco</div>
-                    <img src="media/pexels-katarzyna-modrzejewska-1314550.jpg" alt="">
-                </div>
-                <div class="the-back">
-                    <br>
-                    <br>
-                    <img src="media/cat.png" alt="cat">
-                    <br>
-                    <br>
-                    Loves to : Sleep and Shower
-                    <br>
-                    <br>
-                    Favourite food: Jambon
-                </div>
-            </div>
-        </div>
-        <div class="pet-container">
-            <div class="the-card">
-                <div class="the-front"><div class="pet-name">Sloum</div>
-                    <img src="media/pexels-fotografierende-4492260.jpg" alt="">
-                </div>
-                <div class="the-back">
-                    <br>
-                    <br>
-                    <img src="media/easter-bunny.png" alt="rabbit">
-                    <br>
-                    <br>
-                    Only Sleepss
-                    <br>
-                    <br>
-                    Favourite food: cucumber
-                </div>
-            </div>
-        </div>
-        <div class="pet-container">
-            <div class="the-card">
-                <div class="the-front"><div class="pet-name">Zouba</div>
-                    <img src="media/pexels-anna-shvets-4587979.jpg" alt="">
-                </div>
-                <div class="the-back">
-                    <br>
-                    <br>
-                    <img src="media/pet.png" alt="rabbit">
-                    <br>
-                    <br>
-                    Trained and very Loyal
-                    <br>
-                    <br>
-                    Favourite food: tuna
-                </div>
-            </div>
-        </div>
-        <div class="pet-container">
-            <div class="the-card">
-                <div class="the-front"><div class="pet-name">Falfoul</div>
-                    <img src="media/pexels-ellie-burgin-3432929.jpg" alt="">
-                </div>
-                <div class="the-back">
-                    <br>
-                    <br>
-                    <img src="media/hamster.png" alt="rabbit">
-                    <br>
-                    <br>
-                    Adorable
-                    <br>
-                    <br>
-                    Favourite food: Eats Everything
-                </div>
-            </div>
-        </div>
-        <div class="pet-container">
-            <div class="the-card">
-                <div class="the-front"><div class="pet-name">Hayfem</div>
-                    <img src="media/pexels-iwona-kisiel-4098733.jpg" alt="">
-                </div>
-                <div class="the-back">
-                    <br>
-                    <br>
-                    <img src="media/turtle.png" alt="rabbit">
-                    <br>
-                    <br>
-                    Fast for a Turtle
-                    <br>
-                    <br>
-                    Favourite food: Tomato,Lettuce
-                </div>
-            </div>
-        </div></div>
+    <button id="signBtn">sign up</button>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script>
